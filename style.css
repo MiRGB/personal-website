@@ -584,7 +584,6 @@ main {
     font-size: 1rem;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -635,7 +634,6 @@ main {
     }
 }
 
-/* Scroll animations */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
