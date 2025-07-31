@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiRGB - Portfolio</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="animated-bg" id="animatedBg"></div>
+
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <img src="logo.png" alt="QA Automation Engineer Logo" style="height: 40px;">
+                <span>Michal Hulka</span>
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>QA Automation Engineer</h1>
+                <p>QA Engineer with 2+ years of experience in automation. I write tests with Cypress, Playwright, WebdriverIO, and Appium, and integrate them into CI/CD pipelines.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#skills" class="btn btn-secondary">View Skills</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <h3>Test Automation</h3>
+                    <ul>
+                        <li>Cypress</li>
+                        <li>Playwright</li>
+                        <li>WebdriverIO</li>
+                        <li>Appium</li>
+                        <li>Testim</li>
+                    </ul>
+                </div>
+                <div class="skill-card fade-in">
+                    <h3>Tech & Platforms</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>HTML/CSS</li>
+                        <li>BrowserStack</li>
+                        <li>GitHub Actions</li>
+                    </ul>
+                </div>
+                <div class="skill-card fade-in">
+                    <h3>Test Management</h3>
+                    <ul>
+                        <li>Postman</li>
+                        <li>JMeter</li>
+                        <li>TestLink</li>
+                        <li>JIRA/Trello</li>
+                        <li>Allure</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <a href="https://github.com/MiRGB/nasa-open-mct-cypress-tests" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                    <div class="portfolio-item fade-in">
+                        <i class="fas fa-rocket"></i>
+                        <h3>NASA Open MCT Tests</h3>
+                        <p>End-to-end Cypress tests for NASA's Open MCT. Features Allure reports and Page Object Model structure.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/MiRGB/university-vizja-cypress-webdriverio-playwright" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                    <div class="portfolio-item fade-in">
+                        <i class="fa-solid fa-masks-theater"></i>
+                        <h3>Test Framework Comparison</h3>
+                        <p>Benchmark suite using Cypress, Playwright, and WebdriverIO. Unified test logic with Mochawesome, Allure, and Playwright HTML reports.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/MiRGB/appium-automated-tests-for-opentasks-app" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                    <div class="portfolio-item fade-in">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>OpenTasks Mobile App Testing</h3>
+                        <p>Mobile tests with Appium and WebdriverIO. Includes CI/CD integration, BrowserStack, and Allure reporting.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/MiRGB/cypress-automated-tests" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                    <div class="portfolio-item fade-in">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h3>Cypress Shop Tests</h3>
+                        <p>Automated tests for a demo e-commerce site. Covers core flows, retry logic, and cross-origin support.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/MiRGB/webdriverio-automated-tests" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                    <div class="portfolio-item fade-in">
+                        <i class="fa-solid fa-robot"></i>
+                        <h3>WebdriverIO Shop Tests</h3>
+                        <p>WebdriverIO tests for an e-commerce site with Page Object Model and Allure reports. Built in TypeScript.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/MiRGB/colornote-appium-automated-tests-demo" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                    <div class="portfolio-item fade-in">
+                        <i class="fa-solid fa-mobile-vibrate"></i>
+                        <h3>ColorNote Mobile App Testing</h3>
+                        <p>UI tests for Android's ColorNote app using Appium. Created as a learning resource with Allure reports.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/MiRGB/qa-artifacts-collection" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                    <div class="portfolio-item fade-in">
+                        <i class="fas fa-toolbox"></i>
+                        <h3>QA Artifacts</h3>
+                        <p>Collection of QA materials: test cases, bug reports, API tests, performance testing, and documentation samples.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/MiRGB/rock-paper-scissors-game" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                    <div class="portfolio-item fade-in">
+                        <i class="fas fa-hand-scissors"></i>
+                        <h3>Rock-Paper-Scissors Game</h3>
+                        <p>A simple browser-based game featuring a clean interface and sound effects. Built with JavaScript, HTML, and CSS.</p>
+                    </div>
+                </a>
+                <a href="https://gekotutel.itch.io/fifteen" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+                    <div class="portfolio-item fade-in">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Fifteen! Desktop Card Game</h3>
+                        <p>A strategic desktop card game built with Unity and C#. Released as a Windows executable (.exe).</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content fade-in">
+                        <h3>QA Automation Engineer</h3>
+                        <p><strong>Readiy P.S.A.</strong> | 2023 - currently</p>
+                        <p>I am currently working on a mobile application for controlling smart home devices. I operate within a team following Agile methodology (Scrum). My responsibilities include test automation, manual testing, configuring devices and environments, and direct communication with the client.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content fade-in">
+                        <h3>Graphic Designer</h3>
+                        <p><strong>Geko Productions</strong> | 2022 - 2023</p>
+                        <p>I worked as a graphic designer, creating digital assets and UI designs in Figma, as well as illustrations and marketing materials using Photoshop and Illustrator. I also used Blender for basic 3D modeling and visualizations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <a href="https://outlook.live.com/mail/0/deeplink/compose?to=mich.hulka@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-item fade-in" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>mich.hulka@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/michal-hulka/" target="_blank" rel="noopener noreferrer" class="contact-item fade-in" style="text-decoration: none; color: inherit;">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin/michal-hulka/</p>
+                </a>
+                <a href="https://github.com/MiRGB?tab=repositories" target="_blank" rel="noopener noreferrer" class="contact-item fade-in" style="text-decoration: none; color: inherit;">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>github.com/MiRGB</p>
+                </a>
+                <a href="https://gekotutel.itch.io/fifteen" target="_blank" rel="noopener noreferrer" class="contact-item fade-in" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Itch.io</h3>
+                    <p>gekotutel.itch.io/fifteen</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
